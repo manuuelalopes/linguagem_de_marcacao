@@ -4,30 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.bear</title>
+    <title>Mr. Bear</title>
     <style>
-    
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff0f5;
-        
+            background-color: #fff0f5; 
             margin: 20px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 120px; 
+            height: auto;
+            border-radius: 12px; 
+            
+        }
+
+        
+        nav a {
+            text-decoration: none;
+            color: #5a3e36;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d17088;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <h1>Mr. bear</h1>
+        <nav>
+             
+            <img src="imagens/logo.jpg" alt="Logo Mr. Bear - Ursinho de Pelúcia com Laço" class="logo">
+            <h1>Mr. Bear</h1>
+            <a href="#Sobre Nós">Sobre Nós</a>
+            <a href="#Serviços">Serviços</a>
+            <a href="#Contatos">Contatos</a>
+        </nav>
+        
         <hr>
-        <a href="#Sobre Nós">Contate-nos</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#inicio">Contatos</a>
-
+        
         <h2>Nossos valores:</h2>
         <section id="Sobre Nós">
             <article>
-              
                 <p>
                     Na Mr. Bear, criamos laços e transformamos afeto em abraços inesquecíveis.
                     Somos especialistas em ursinhos e bichinhos de pelúcia ultra macios, feitos com materiais de
@@ -42,7 +67,7 @@
         </section>
     </main>
 
-    <h2>O que a Mr. bear fornece á você:</h2>
+    <h2>O que a Mr. Bear fornece a você:</h2>
     <section id="Serviços">
         <article>
             <p>
@@ -52,10 +77,9 @@
                 feita para oferecer a melhor experiência em pelúcias.
             </p>
             
-      
             <ol>
-                <li>Materiais ultra macios e antialérgicos</li>
-                <li>Acabamento impecável e de alta durabilidade</li>
+                <li> Antialérgicos testados dermatológicamente</li>
+                <li>Acabamento e material de alta durabilidade</li>
                 <li>Atendimento rápido e entrega para todo o Brasil</li>
             </ol>
             <hr>
@@ -63,27 +87,27 @@
     </section>
 
     <section id="Nossos produtos">
-      
         <h2>Nossos ursinhos:</h2>
         <article>
-            <img src="images (1).jpg" alt="My Melody de pelúcia">
+            <!-- REQUISITOS: Caminhos relativos + Texto alternativo alt -->
+            <img src="imagens/images (1).jpg" alt="My Melody de pelúcia - Turma Sanrio" width="150">
             <p>My Melody de pelúcia - Turma Sanrio</p>
             <p><strong>R$: 150,00</strong></p>
         </article>
         <article>
-            <img src="images (2).jpg" alt="Ursinho Pooh de pelúcia">
-            <p>Ursinho pooh de pelúcia - Coleção Disney</p>
+            <img src="imagens/images (2).jpg" alt="Ursinho Pooh de pelúcia - Coleção Disney" width="150">
+            <p>Ursinho Pooh de pelúcia - Coleção Disney</p>
             <p><strong>R$: 185,89</strong></p>
         </article>
         <article>
-            <img src="images (3).jpg" width="50%" alt="Cinnamon roll de pelúcia">
-            <p>Cinnamon roll de pelúcia - Turma Sanrio</p>
+            <img src="imagens/images (3).jpg" alt="Cinnamoroll de pelúcia - Turma Sanrio" width="150">
+            <p>Cinnamoroll de pelúcia - Turma Sanrio</p>
             <p><strong>R$: 200,00</strong></p>
         </article>
         <article>
-            <img src="images.jpg" alt="Hello Kitty de pelúcia">
+            <img src="imagens/images.jpg" alt="Hello Kitty de pelúcia - Turma Sanrio" width="150">
             <p>Hello Kitty de pelúcia - Turma Sanrio</p>
-            <p><strong>R$ 190,00</strong></p>
+            <p><strong>R$: 190,00</strong></p>
         </article>
     </section>
 
@@ -91,11 +115,9 @@
 
     <section id="Contatos">
         <article>
-            <h2>Como Podemos te ajudar?</h2>
-            
-            
+            <h2>Como podemos te ajudar?</h2>
             <ul>
-                <li><strong>Telefone:</strong> 19 9999-9999</li>
+                <li><strong>Telefone:</strong> (19) 9999-9999</li>
                 <li><strong>Email:</strong> mrbear@gmail.com</li>
                 <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mrbear.oficial" target="_blank">@mrbear.oficial</a></li>
             </ul>
