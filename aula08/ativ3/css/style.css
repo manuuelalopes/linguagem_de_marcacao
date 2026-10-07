@@ -1,0 +1,51 @@
+/* Configuração geral do site */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos e textos padronizados */
+h1, h2 {
+  color: rgb(93, 178, 180);
+}
+
+p {
+  color: #333333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+/* Requisito: Uso de ID (#banner-principal) */
+#banner1 {
+  background-color: #dcdcdc;
+  padding: 30px;
+}
+
+/* Requisito: Classe 1 (.secao) */
+.secao {
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Requisito: Classe 2 (.curso-item) */
+.curso {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Requisito: Classe 3 (.rodape-texto) */
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
