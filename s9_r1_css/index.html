@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        /* MENU (Mudança suave de cor + Links com alteração elegante de cor) */
+        nav {
+            background-color: #1e293b;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Transição suave de cor do menu */
+            transition: background-color 0.4s ease;
+        }
+
+        nav:hover {
+            background-color: #0f172a;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* LINKS (Alteração elegante de cor) */
+        .menu-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .menu-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* BANNER COM BOTÃO (Efeito de crescimento) */
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        /* BOTÃO (Efeito de crescimento) */
+        .btn-principal {
+            background-color: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .btn-principal:hover {
+            transform: scale(1.08);
+            background-color: #1d4ed8;
+        }
+
+        /* CARDS (Elevação visual) */
+        .container-cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            /* Elevação via transform e transition */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu com transição de cor e links elegantes -->
+    <nav>
+        <div class="logo">TechCorp</div>
+        <ul class="menu-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner com Botão com efeito de crescimento -->
+    <header class="hero">
+        <h1>Transforme seu Negócio Digital</h1>
+        <p>Desenvolvemos soluções modernas e de alta performance.</p>
+        <button class="btn-principal">Começar Agora</button>
+    </header>
+
+    <!-- Cards com elevação visual -->
+    <main class="container-cards">
+        <div class="card">
+            <h3>Desenvolvimento</h3>
+            <p>Criação de sites e sistemas rápidos, otimizados e responsivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Design UI/UX</h3>
+            <p>Interfaces intuitivas focadas na melhor experiência do usuário.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultoria</h3>
+            <p>Estratégias digitais para acelerar os resultados da sua empresa.</p>
+        </div>
+    </main>
+
+</body>
+</html>
