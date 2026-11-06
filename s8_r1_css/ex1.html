@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Transform CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+        }
+
+        /* BANNER PRINCIPAL (skew) */
+        .banner {
+            background-color: #2563eb;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            /* Aplica a inclinação no banner */
+            transform: skewY(-3deg);
+            margin-bottom: 50px;
+        }
+        
+        .banner-conteudo {
+            /* Desfaz a inclinação para o texto ficar reto */
+            transform: skewY(3deg);
+        }
+
+        .banner h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+        }
+
+        /* BOTÃO (scale) */
+        .btn {
+            background-color: #22c55e;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            /* Aumenta o tamanho do botão ao passar o mouse */
+            transform: scale(1.1);
+        }
+
+        /* SEÇÃO DE CARDS (translate) */
+        .container-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            /* Move o card para cima ao passar o mouse */
+            transform: translateY(-10px);
+        }
+
+        /* ÍCONES (rotate) */
+        .icone {
+            font-size: 40px;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .icone {
+            /* Rotaciona o ícone quando o card recebe hover */
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner Principal usando skew() -->
+    <header class="banner">
+        <div class="banner-conteudo">
+            <h1>Inovação e Tecnologia</h1>
+            <p>Soluções modernas para o seu negócio crescer.</p>
+            <!-- Botão usando scale() -->
+            <button class="btn">Saiba Mais</button>
+        </div>
+    </header>
+
+    <!-- Cards usando translate() e Ícones usando rotate() -->
+    <main class="container-cards">
+        
+        <div class="card">
+            <span class="icone">⚙️</span>
+            <h3>Configuração</h3>
+            <p>Sistemas otimizados e prontos para uso.</p>
+        </div>
+
+        <div class="card">
+            <span class="icone">🚀</span>
+            <h3>Velocidade</h3>
+            <p>Carregamento rápido e alta performance.</p>
+        </div>
+
+        <div class="card">
+            <span class="icone">🔒</span>
+            <h3>Segurança</h3>
+            <p>Proteção total de dados e privacidade.</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
