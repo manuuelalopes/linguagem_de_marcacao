@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: center;
+        }
+        th {
+            color: white;
+        }
+        .aluno {
+            text-align: left;
+            font-weight: bold;
+            background-color: #ecf0f1;
+        }
+        .disciplina {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .media-destaque {
+            font-weight: bold;
+            background-color: #e8f8f5;
+        }
+        .aprovado {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Boletim Escolar Desempenho Anual</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Aluno / Disciplina</th>
+                <th colspan="4">Notas Por Bimestre</th>
+                <th rowspan="2">Média Final</th>
+                <th rowspan="2">Situação</th>
+            </tr>
+            <tr>
+                <th>1º Bm</th>
+                <th>2º Bm</th>
+                <th>3º Bm</th>
+                <th>4º Bm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="aluno">João Santos</td>
+                <td class="disciplina">Matemática</td>
+                <td>8.5</td>
+                <td>7.0</td>
+                <td>9.0</td>
+                <td>8.0</td>
+                <td class="media-destaque">8.1</td>
+                <td rowspan="3" class="aprovado">Aprovado</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Português</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td class="media-destaque">8.3</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Física</td>
+                <td>6.5</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>7.0</td>
+                <td class="media-destaque">7.3</td>
+            </tr>
+
+           
+            <tr>
+                <td rowspan="3" class="aluno">Maria Eduarda</td>
+                <td class="disciplina">Matemática</td>
+                <td>9.0</td>
+                <td>9.5</td>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td class="media-destaque">9.4</td>
+                <td rowspan="3" class="aprovado">Aprovada</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Português</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>8.0</td>
+                <td>9.5</td>
+                <td class="media-destaque">8.8</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Física</td>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td class="media-destaque">9.1</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
