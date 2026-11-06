@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Candidato</title>
+    <style>
+        *
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 550px;
+        }
+        h1 {
+            color: #0f172a;
+            margin-top: 0;
+            margin-bottom: 24px;
+            font-size: 24px;
+            text-align: center;
+        }
+        fieldset {
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 8px;
+            font-size: 16px;
+        }
+        .campo {
+            margin-bottom: 16px;
+        }
+        .campo:last-child {
+            margin-bottom: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #334155;
+            font-size: 14px;
+        }
+        .obrigatorio {
+            color: #dc2626;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #1e293b;
+            background-color: #ffffff;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        input:focus, select:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+            outline: none;
+        }
+        button {
+           
+            color: #120505;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Cadastro de Candidato</h1>
+
+        <form action="#" method="POST">
+            
+            <!-- Dados Pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome Completo <span class="obrigatorio">*</span></label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Lucas Gabriel Silva" required minlength="3">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail <span class="obrigatorio">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="lucas.silva@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone / WhatsApp <span class="obrigatorio">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(19) 99999-9999" pattern="[0-9()\s-]{10,15}" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nascimento">Data de Nascimento <span class="obrigatorio">*</span></label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
+            </fieldset>
+
+            <!-- Dados Profissionais -->
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+
+                <div class="campo">
+                    <label for="area">Área de Atuação <span class="obrigatorio">*</span></label>
+                    <select id="area" name="area" required>
+                        <option value="" disabled selected>Selecione uma área...</option>
+                        <option value="frontend">Desenvolvimento Front-end</option>
+                        <option value="backend">Desenvolvimento Back-end</option>
+                        <option value="fullstack">Desenvolvimento Full Stack</option>
+                        <option value="uxui">Design UX/UI</option>
+                        <option value="qa">Garantia de Qualidade (QA)</option>
+                        <option value="data">Ciência / Análise de Dados</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="pretensao">Pretensão Salarial (R$) <span class="obrigatorio">*</span></label>
+                    <input type="number" id="pretensao" name="pretensao" min="1000" step="100" placeholder="Ex: 5000" required>
+                </div>
+
+                <div class="campo">
+                    <label for="portfolio">Portfólio / GitHub (URL) <span class="obrigatorio">*</span></label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/seu-usuario" required>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar Candidatura</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
